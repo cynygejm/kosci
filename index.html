@@ -1,75 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
 <meta charset="utf-8" />
-<title>Gra w kości</title>
+<title>Gra-w-kości</title>
     <link rel="stylesheet" href="style.css">
    <style>
-       
-#container
-{
- background-color: lightgrey;
- width:1000px;
-    height:auto;
- margin-left:auto;
- margin-right:auto;
- font-family:Times New Roman;
-}
-#logo
-{
- background-color: #ADB5BA ;
- text-align:center;
- padding:10px;
- font-size:30px;
- font-weight:bold;
-}           
-#footer
-{   
- clear:both;
- background-color: #ADB5BA;
- text-align:center;
-    padding-top: 20px;
- padding-left:20px;
-    padding-right: 20px;
-    padding-bottom:20px;
- min-height:20px;
- font-size:20px;
- font-weight:normal;
-}
-#content
-{ 
-    font-size: 20px;
-    background-color: lightblue;
-    padding-top: 50px;
-    padding-bottom: 20px;
- text-align: center;
- float:left;
- width:1000px;
- min-height:110px;
- background-color: lightgrey;
-}     
+
 </style>
+    <script src="./kosci.js"></script>
   </head>
   <body>  
-      <div id="container">
-          <div id="logo">--GRA w KOŚCI--</div>
+      <div class="container"> <!--Kornelia ma main class, dlaczego?-->
+          <div id="logo">Witaj w jaskini hazardu.
+          Będziesz grać ze mną w kości.<br/>
+              Ja nazywam się Gracz, Janusz Gracz.
+            
+          </div>
           <div id="content">
           
-      <label for="zaczyna" >podaj imię:</label>      
-<input type="text" name="zaczyna" id="zaczyna"/> 
-<button onclick="okbutton()">ok</button>  <br/>
-  <br/>Losowanie, kto zaczyna: 
-             <button onclick="losuj()">losuj kolejność</button><br/>
-<br/><label for="1gracz" >pierwszy gracz:</label>   
-<input type="text" name="1gracz" id="1gracz"/> <br/>      
-<br/><button onclick="startbutton()">Start!</button>  <br/>
+<label for="name" >A jak Ty masz na imię?</label> <br/>     
+<input type="text" id="name"/> 
+              
+<input type="submit" value="OK" onclick="sprawdz()" />        
+<br/>
+              <br/>Wylosuj kto rzuci pierwszy: <br/>
+              
+           <button onclick="random()">zaczyna</button>
+            <label for="1player" ></label>   
+<input type="text" name="1player" id="1player"/> <br/>  
+
+              
+           <br/><button onclick="start()">Start!</button>  <br/>
+              
 </div>
     <div id="footer">
         <left><img class="img" src="3kosci.jpg"></left><br/>
           <br/>Zasady gry:<br/>   
    <p>Gra trwa 5 rund. Zaczyna wylosowana osoba. Rzuca kośćmi. Przeciwnik typuje, czy w kolejnym rzucie wypadnie większa, czy mniejsza liczba oczek. Jeśli dobrze wytypuje - zdobywa punkt, jeśli źle - punkt zdobywa przeciwnik. Wygrywa gracz z większą liczbą punktów.</p>
-          </div>div>
-        <script src="./kosci.js"></script>
+          </div>
+        
       </div>
+      
   </body>
   </html
