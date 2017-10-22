@@ -24,3 +24,8 @@ function losowanie (){
     }
     return wylosowany;
 } 
+
+function wypiszImie () {
+   return document.getElementById("wynik").value;
+
+}
