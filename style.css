@@ -40,5 +40,12 @@
  width:1000px;
  min-height:110px;
  background-color: lightgrey;
-}     
+} 
+#wynik
+{
+    font-size: 20px;
+    width:1000px;
+    height: 20px;
+    text-align:center;
+}
 </style>
