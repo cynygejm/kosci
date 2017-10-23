@@ -1,7 +1,6 @@
+var imie = document.getElementById("name");
 
- /*var imie = document.getElementById("name").value;*/  /*----czy to nie powinno być tu, u góry raz a dobrze?    */
-
-function sprawdz(){
+function sprawdz(){            //sprawdza czy wpisano cos w okienko
     var imie = document.getElementById("name").value;
     if (imie.length <=0){
         alert ("Wpisz imię");
@@ -11,21 +10,22 @@ function sprawdz(){
         }
     } 
 
-function losowanie (){
-    var imie = document.getElementById("name").value;  /* czy to trzeba przepisywać? */
-    var gracz = "Janusz Gracz";
-    var wylosowany;
+function losowanie(){ 
+    var imie = document.getElementById("name").value; 
+ 
     var losowana = Math.round(Math.random());
-    if (losowana === 0) {
-        wylosowany = imie;
-    }
-    else {
-        wylosowany = gracz;
-    }
-    return wylosowany;
+    if (losowana===0){
+  wypisz.textContent= imie;
 } 
-
-function wypiszImie () {
-   return document.getElementById("wynik").value;
-
+else{
+  wypisz.textContent="Janusz Gracz";
+    
+    return losowana;
+} 
 }
+ var wypisz = document.getElementById("wypisz");
+document.getElementById("wypisz").innerHTML=losowana;
+ // to miało wypisać wynik losowania
+
+
+

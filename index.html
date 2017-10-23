@@ -12,29 +12,28 @@
     
 <body>  
 <div class="container"> <!--Kornelia ma main class, dlaczego?-->
-    <div id="logo">Witaj w jaskini hazardu.Będziesz grać ze mną w kości.<br/>
-                    Ja nazywam się Gracz, Janusz Gracz.
+    <div id="logo">Witaj w jaskini hazardu! Będziesz grać ze mną w kości.
+                    Ja nazywam się Gracz. <br/>
+                    Janusz Gracz.
     </div>
           
 <div id="content">        
-<label for="name" >A jak Ty masz na imię?</label> <br/>   
-    
+<label for="name" >A jak Ty masz na imię?</label> <br/>    
 <input type="text" id="name"/>            
 <input type="submit" value="OK" onclick="sprawdz()" />        
 <br/>
     
 <br/>Wylosuj kto rzuci pierwszy: <br/>
+<input type="submit" id="zaczyna" value="zaczyna..." onclick="losowanie()" />
     
-<input type="submit" value="zaczyna..." onclick="losowanie()" />
-    
-<!--<div id="wynik" value= "wylosowany"> </div>  -->
-    <input type="text" id ="wynik"/>
+<div id="wypisz"></div> 
    <script type="./kosci.js">
+
 
    </script>  
   <br/>  
-<input type="submit" value="START" onclick=" " />
     
+<input type="submit" value="START" onclick=" " />
 </div>
     
 <div id="footer">
