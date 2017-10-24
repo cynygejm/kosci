@@ -1,3 +1,4 @@
+ var imie = document.getElementById("name");
 function sprawdz(){            //sprawdza czy wpisano cos w okienko
     var imie = document.getElementById("name").value;
     if (imie.length <=0){
@@ -7,7 +8,7 @@ function sprawdz(){            //sprawdza czy wpisano cos w okienko
             return imie;
         }
     } 
-
+ var losowana = Math.round(Math.random());
 var wypisz = document.getElementById("wypisz");
 function losowanie(){ 
     var imie = document.getElementById("name").value; 
@@ -18,8 +19,6 @@ function losowanie(){
 } 
 else{
   wypisz.textContent="Janusz Gracz";
-    
-    return losowana;
 } 
 }
  
