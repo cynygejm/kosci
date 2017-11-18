@@ -1,51 +1,7 @@
-  <style>     
-.container
-{
- background-color: lightgrey;
- width:1000px;
- height: 1000px;
- margin-left:auto;
- margin-right:auto;
- font-family:Times New Roman;
-}
-#logo
-{
- background-color: #ADB5BA ;
- text-align:center;
- padding:10px;
- font-size:30px;
- font-weight:bold;
-}           
-#footer
-{   
- clear:both;
- background-color: #ADB5BA;
- text-align:center;
-    padding-top: 20px;
-    padding-left:20px;
-    padding-right: 20px;
-    padding-bottom:20px;
- min-height:20px;
- font-size:20px;
- font-weight:normal;
-}
-#content
-{ 
-    font-size: 20px;
-    background-color: lightblue;
-    padding-top: 20px;
-    padding-bottom: 20px;
- text-align: center;
- 
- min-height:110px;
- background-color: lightgrey;
-} 
-#wypisz
-{background-color: white;
-    font-size: 20px;
-    width:auto;
-    height: 20px;
-    text-align:center;
-    font-family: Times New Roman;
-}
+  <style>
+.container {background-color: lightgrey; width:1000px; height: 1000px; margin-left:auto; margin-right:auto; font-family:Times New Roman;}
+#logo {background-color: #ADB5BA; text-align:center; padding:10px; font-size:30px; font-weight:bold;}
+#footer {clear:both; background-color: #ADB5BA; text-align:center; padding-top: 20px; padding-left:20px; padding-right: 20px; padding-bottom:20px; min-height:20px; font-size:20px; font-weight:normal;}
+#content {font-size: 20px; background-color: lightblue; padding-top: 20px; padding-bottom: 20px; text-align: center; min-height:110px; background-color: lightgrey;}
+#wypisz {background-color: white; font-size: 20px; width:auto; height: 20px; text-align:center; font-family: Times New Roman;}
 </style>
