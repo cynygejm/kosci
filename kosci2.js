@@ -1,16 +1,16 @@
-var addName= document.querySelector("#name");
-var okButton= document.querySelector(".okbutton");
+const addName= document.querySelector("#name");
+const okButton= document.querySelector(".okbutton");
 okButton.addEventListener("click", function check(){
-    var name = document.querySelector("#name").value;
+    vlet name = document.querySelector("#name").value;
     if (name.length <=0){
           alert ("Wpisz imię");
         }
     else{console.log(name);}
     });
-var randomButton=document.querySelector("#random");
+const randomButton=document.querySelector("#random");
 randomButton.addEventListener("click", function random(){
-    var name = document.querySelector("#name").value;
-    var randomNr = Math.round(Math.random());
+    let name = document.querySelector("#name").value;
+    let randomNr = Math.round(Math.random());
 
     if (randomNr === 0){
         write.innerHTML= name;
@@ -20,8 +20,8 @@ randomButton.addEventListener("click", function random(){
     }
 });
 
-var startButton=document.querySelector("#start");
-var container =document.querySelector(".container");
+const startButton=document.querySelector("#start");
+const container =document.querySelector(".container");
 startButton.addEventListener("click", function changeContainer (){
 //    co dalej? jak zmienić "planszę?""
 })
