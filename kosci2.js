@@ -1,7 +1,7 @@
 const addName= document.querySelector("#name");
 const okButton= document.querySelector(".okbutton");
 okButton.addEventListener("click", function check(){
-    vlet name = document.querySelector("#name").value;
+    let name = document.querySelector("#name").value;
     if (name.length <=0){
           alert ("Wpisz imię");
         }
@@ -12,7 +12,7 @@ randomButton.addEventListener("click", function random(){
     let name = document.querySelector("#name").value;
     let randomNr = Math.round(Math.random());
 
-    if (randomNr === 0){
+    if (randomNr !== 0){
         write.innerHTML= name;
     }
     else{
